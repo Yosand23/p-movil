@@ -9,8 +9,8 @@
 </head>
 <body style="padding: 0; margin: 0;">
     <header>
-        <div id="logo" style="display: inline-block;">           
-            <a href="index.html"><img src="recursos/logo.jpg" alt="" width="100px"></a>
+        <div id="logo" style="display: inline-block;">
+            <img src="recursos/logo.jpg" alt="" width="100px">
         </div>
         <div id="buscador" style="display: inline-block;">
             <label for="">¿Que esta buscando?</label>
@@ -19,22 +19,34 @@
         </div>
         <nav style="display: inline-block;">
             <ul>
-                <li><a href="#">Inicio</a> </li>
+                <li><a href="index.html">Inicio</a> </li>
                 <li><a href="info.html">Acerca de</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="comentarios.html">Comentanos</a></li>
+                <li><a href="#">Comentanos</a></li>
             </ul>
         </nav>
     </header>
-    <section style="padding: 100px 25px;" id="CTA">
-        <div style="display: inline-block; width: 40%;">
-            <h1>TOCA COMO LOS MEJORES CON LOS MEJORES INTRUMENTOS</h1>
-            <h3>Quieres tocar como tus artistas favoritos, con nuestros instrumentos lograras el mejor sonido y la mejor presentacion para que te luscas con tus amigos</h3>
-            <button><a href="#productos" style="text-decoration-line: none;"><h1>COMPRAR AHORA</h1></a></button>
-        </div>
-        <div style="display: inline-block; width:  30%; padding: 5px 20px;">
-            <video src="recursos/presentacion.mp4" style="height: 10cm;" controls></video>
-        </div>
+    <section >       
+        <form action="" method="post" accept-charset="UTF-8">
+            <h3>Dejanos tus comentarios</h3>
+            <label for="">Nombres y Apellidos: </label>
+            <input type="text" name="" id="" required>
+            <label for="">Correo electronico: </label>
+            <input type="email" name="" id="" required>
+            <label for="">Edad: </label>
+            <input type="number" name="" id="" required>
+            <label for="">Ciudad: </label>
+            <select name="" id="">
+                <option value="Santa Rosa">Santa Rosa</option>
+                <option value="Machala">Machala</option>
+                <option value="Quito">Quito</option>
+                <option value="Guayaquil">Guayaquil</option>
+                <option value="Cuenca">Cuenca</option>
+            </select>
+            <label for="">Comentario:</label>
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+            <input type="submit">
+        </form>
     </section>
     <footer style="padding: 30px; margin-top: 30px;">
         <div id="contacto">
