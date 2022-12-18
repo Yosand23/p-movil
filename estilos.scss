@@ -2,3 +2,129 @@
     margin: 0;
     padding: 0;
 }
+$letraPrincipal: Arial, Helvetica, sans-serif;
+$cPrincipal : #825343;
+$cSecundario : #CFA076;
+$cFondo:#a7a7a7;
+$cClaro: #FBD0AE;
+$cBlanco: #E2DAD7;
+
+header{
+    background-color: $cPrincipal;
+    position: sticky;
+    top: 0;
+    color: $cPrincipal;
+}
+
+
+
+#logo{
+    display: inline-block;
+    margin: 10px 30px;
+    width: 20%;
+    img{
+        border-radius: 10px;
+        border: 3px solid $cFondo;
+    }
+}
+
+#buscador{
+    display: inline-block;
+    margin: 10px 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    input{
+        border: none;
+        padding: 5px 10px;
+        margin: 10px 5px;
+        border-radius: 10px;
+        outline: none;
+        font-family: $letraPrincipal;
+        font-size: large;
+        width: 85%;
+
+    }
+    button{
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        padding: 5px;
+    }
+}
+
+nav{
+    width: 30%;
+    display: inline-block;
+    li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+        a{
+            text-decoration: none;
+            font-family: $letraPrincipal;
+            font-size: medium;
+            color: $cBlanco;
+        }
+    }
+}
+
+#CTA{
+    padding: 100px 30px;
+    background-color: $cBlanco;
+}
+
+#comentario{
+    display: inline-block;
+    width: 50%;
+    margin: 0 30px;
+    font-family: $letraPrincipal;
+    font-size: larger;
+    h1{
+        margin: 20px 5px;
+        color: $cPrincipal;
+    }
+    h3{
+        line-height: 30px;
+        margin: 20px 5px;
+        color: $cSecundario;
+    }
+    button{
+        border-radius: 10px;
+        background-color: $cClaro;
+        border: 3px solid $cSecundario;
+        padding: 5px 10px;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+#video{
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    video{
+        border-radius: 5px;
+        border: 3px solid $cPrincipal;
+    }
+}
+
+footer{
+    background-color: $cClaro;
+    font-family: $letraPrincipal;
+    div{
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+        li{
+            list-style: none;
+            margin: 10px 30px;
+            display: inline-block;
+            b{
+                margin: 10px 20px;
+                display: inline-block;
+            }
+        }
+    }
+}
