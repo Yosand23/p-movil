@@ -12,26 +12,24 @@ header {
   align-items: center;
   justify-content: center;
 }
-
-#logo {
+header #logo {
   flex-grow: 3;
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-#logo img {
+header #logo img {
   border-radius: 10px;
   border: 3px solid #a7a7a7;
   width: 80px;
 }
-
-#buscador {
+header #buscador {
   background-color: white;
   border-radius: 10px;
   flex-grow: 3;
   display: flex;
 }
-#buscador input {
+header #buscador input {
   transition: all 0.3s;
   padding: 10px 15px;
   border-radius: 10px;
@@ -40,7 +38,7 @@ header {
   font-size: large;
   flex-grow: 12;
 }
-#buscador button {
+header #buscador button {
   border: none;
   border-radius: 10px;
   background-color: white;
@@ -48,26 +46,25 @@ header {
   flex-grow: 1;
   transition: all 0.3s;
 }
-
-nav {
+header nav {
   flex-grow: 2;
   display: flex;
   justify-content: center;
 }
-nav li {
+header nav li {
   list-style: none;
   display: inline-block;
   padding: 3px 7px;
   border-radius: 5px;
   transition: all 0.3s;
 }
-nav li a {
+header nav li a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
   color: #E2DAD7;
 }
-nav li:hover {
+header nav li:hover {
   background-color: #CFA076;
 }
 
@@ -256,7 +253,6 @@ footer div li {
   padding: 10px 30px;
   border-radius: 5px;
   display: flex;
-  transition: all 0.3s;
 }
 footer div li b {
   margin: 10px 20px;
@@ -269,6 +265,38 @@ button:hover {
 
 input:focus {
   border: 2px solid #3b261f;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    flex-wrap: wrap;
+  }
+  header #logo {
+    flex-grow: 1;
+    margin: 10px;
+  }
+  header #buscador {
+    flex-grow: 1;
+    margin: 10px;
+  }
+  header nav {
+    flex-grow: 5;
+    margin: 10px;
+  }
+  #CTA {
+    flex-wrap: wrap-reverse;
+  }
+  #CTA video {
+    display: block;
+    width: 98%;
+    margin: auto;
+  }
+  #CTA #comentario {
+    font-size: medium;
+  }
+  footer div {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
