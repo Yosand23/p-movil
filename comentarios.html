@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Music</title>
     <link rel="shorcut icon" href="recursos/logo.jpg" >
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body style="padding: 0; margin: 0;">
     <header>
-        <div id="logo" style="display: inline-block;">
+        <div id="logo">
             <a href="index.html"><img src="recursos/logo.jpg" alt="" width="100px"></a>
         </div>
-        <div id="buscador" style="display: inline-block;">
-            <label for="">¿Que esta buscando?</label>
-            <input type="text" placeholder="Ingrese un producto">
-            <button> <img src="recursos/buscar.ico" alt="buscar" title="buscar" > </button>
+        <div id="buscador">
+            <input type="text" placeholder="¿Que esta buscando?">
+            <button> <img src="recursos/buscar.ico" alt="buscar" title="buscar"> </button>
         </div>
-        <nav style="display: inline-block;">
+        <nav>
             <ul>
                 <li><a href="index.html">Inicio</a> </li>
                 <li><a href="info.html">Acerca de</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="#">Comentanos</a></li>
+                <li><a href="comentarios.html">Comentanos</a></li>
             </ul>
         </nav>
     </header>
-    <section >       
+    <section id="frm">
+        <h3>Dejanos tus comentarios</h3>
         <form action="" method="post" accept-charset="UTF-8">
-            <h3>Dejanos tus comentarios</h3>
             <label for="">Nombres y Apellidos: </label>
             <input type="text" name="" id="" required>
             <label for="">Correo electronico: </label>
@@ -44,25 +44,25 @@
                 <option value="Cuenca">Cuenca</option>
             </select>
             <label for="">Comentario:</label>
-            <textarea name="" id="" cols="30" rows="3"></textarea>
-            <input type="submit">
+            <textarea name="" id="" rows="5" columns="50"></textarea>
+            <input type="submit" id="enviar">
         </form>
     </section>
-    <footer style="padding: 30px; margin-top: 30px;">
+    <footer>
         <div id="contacto">
             <b>Contactanos:</b>
             <ul>
-                <li style="margin: 20px;">
-                    <img src="recursos/facebook.ico" alt="facebook"> <b>Best Music</b> 
+                <li>
+                    <img src="recursos/facebook.ico" alt="facebook"> <b>Best Music</b>
                 </li>
-                <li style="margin: 20px;">
-                    <img src="recursos/instagram.ico" alt="instagram"> <b>Best Music</b> 
+                <li>
+                    <img src="recursos/instagram.ico" alt="instagram"> <b>Best Music</b>
                 </li>
-                <li style="margin: 20px;">
-                    <img src="recursos/whatsapp.ico" alt="instagram"> <b>0939295448</b> 
+                <li>
+                    <img src="recursos/whatsapp.ico" alt="instagram"> <b>0939295448</b>
                 </li>
-                <li style="margin: 20px;">
-                    <img src="recursos/gmail.ico" alt="instagram"> <b>Best_Music@gmail.com</b> 
+                <li>
+                    <img src="recursos/gmail.ico" alt="instagram"> <b>Best_Music@gmail.com</b>
                 </li>
             </ul>
         </div>
